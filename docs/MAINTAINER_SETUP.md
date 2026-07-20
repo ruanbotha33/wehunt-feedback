@@ -31,7 +31,7 @@ Suggested Ideas category description:
 
 ## 3. Create labels
 
-Create the following repository labels. The values below are suggested colors without the leading `#`.
+The labels are managed in `.github/labels.json` and synchronized by `.github/workflows/sync-labels.yml`.
 
 ### Type
 
@@ -97,50 +97,35 @@ Create the following repository labels. The values below are suggested colors wi
 | cannot-reproduce | e4e669 |
 | security | b60205 |
 
-The bug and feature forms already reference the initial type and triage labels. Once the labels exist, new submissions will receive them automatically.
+The bug and feature forms reference the initial type and triage labels, so new submissions receive them automatically.
 
-## 4. Create the project tracker
+## 4. Configure the project tracker
 
-Create a user-level GitHub Project named **WeHunt Product** and link this repository to it.
+Project: [WeHunt Product](https://github.com/users/ruanbotha33/projects/2)
 
-### Suggested custom fields
+Follow [`docs/PROJECT_SETUP.md`](PROJECT_SETUP.md) for the final field, view, workflow, visibility, repository-linking, and verification configuration.
 
-| Field | Type | Values or use |
-|---|---|---|
-| Status | Single select | Inbox, Needs Review, Accepted, Planned, In Progress, Testing, Shipped, Declined |
-| Type | Single select | Bug, Feature, Improvement, Maintenance |
-| Priority | Single select | P0 Critical, P1 High, P2 Normal, P3 Low |
-| Platform | Single select | All, Website, Steam, Xbox, PlayStation |
-| Area | Single select | Achievements, Sync, Accounts, Profiles, Search, UI, Notifications, Admin |
-| Effort | Single select | XS, S, M, L, XL |
-| Release | Single select | Backlog, MVP, Beta, v1.0, Later |
-| Start date | Date | Work start |
-| Target date | Date | Intended completion |
-| Public request | Text | Link to the original Discussion |
+The Project should use repository labels as the source of truth for Type, Priority, Platform, and Area. Do not duplicate those values as custom Project fields. GitHub's built-in Labels field will reflect changes made on Issues.
 
-Use GitHub's built-in assignee field for the owner.
+The Project-specific fields should be:
 
-### Suggested views
+- Status
+- Effort
+- Release
+- Start date
+- Target date
+- Public request
 
-1. **Triage Inbox** — Status is Inbox or Needs Review
-2. **Bug Board** — board grouped by Status, filtered to Type = Bug
-3. **Feature Pipeline** — board grouped by Status, filtered to Type = Feature
-4. **Current Work** — In Progress or Testing
-5. **Roadmap** — roadmap layout grouped by Release or Platform
-6. **Platform Health** — grouped by Platform
-7. **Shipped** — completed items for release notes
-
-### Suggested automation
-
-Create an auto-add workflow that adds new Issues from `ruanbotha33/wehunt-feedback` to the project with Status set to Inbox.
+Configure built-in workflows so new Issues from `ruanbotha33/wehunt-feedback` are automatically added and receive Status = Inbox.
 
 When accepting a feature request:
 
 1. Add `status: accepted` to the Discussion.
 2. Create an Issue from the Discussion.
-3. Add the Issue to the project.
-4. Set Type, Priority, Platform, Area, Effort, and Release.
-5. Preserve the Discussion link in the Public request field.
+3. Confirm the Issue is added to the Project.
+4. Apply type, priority, platform, and area labels.
+5. Set Effort, Release, Start date, and Target date where known.
+6. Preserve the Discussion link in the Public request field.
 
 ## 5. Add links to WeHunt.gg
 
@@ -148,6 +133,7 @@ Add a visible **Feedback & Roadmap** link in the site navigation or footer.
 
 Recommended destinations:
 
+- Roadmap: `https://github.com/users/ruanbotha33/projects/2`
 - Bugs: `https://github.com/ruanbotha33/wehunt-feedback/issues/new?template=bug_report.yml`
 - Features and voting: `https://github.com/ruanbotha33/wehunt-feedback/discussions/categories/ideas`
 - All feedback: `https://github.com/ruanbotha33/wehunt-feedback`
@@ -164,8 +150,8 @@ Once a week:
 2. Close or merge duplicates.
 3. Request missing reproduction details.
 4. Apply platform, area, type, and priority labels.
-5. Move accepted work into the project.
-6. Update statuses on work already underway.
+5. Move accepted work through the Project workflow.
+6. Update Effort, Release, and target dates where useful.
 7. Mark shipped requests and include them in release notes.
 
 ## 7. Before announcing the hub
@@ -176,5 +162,6 @@ Test the experience with a non-maintainer GitHub account:
 - Open an Idea.
 - Upvote an Idea.
 - Confirm labels apply correctly.
-- Confirm new Issues enter the project.
+- Confirm new Issues enter the Project with Status = Inbox.
+- Confirm the Project and its roadmap views are publicly visible.
 - Confirm no private or source-code information is exposed.
