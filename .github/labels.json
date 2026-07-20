@@ -1,0 +1,41 @@
+[
+  {"name":"type: bug","color":"d73a4a","description":"Something is not working as expected"},
+  {"name":"type: feature","color":"a2eeef","description":"A request for new product functionality"},
+  {"name":"type: improvement","color":"84b6eb","description":"An enhancement to existing functionality"},
+  {"name":"type: maintenance","color":"c5def5","description":"Internal upkeep, cleanup, or technical maintenance"},
+
+  {"name":"status: needs-triage","color":"fbca04","description":"New submission awaiting initial triage"},
+  {"name":"status: needs-review","color":"fbca04","description":"Ready for product or technical review"},
+  {"name":"status: considering","color":"d4c5f9","description":"Being evaluated for product fit and feasibility"},
+  {"name":"status: accepted","color":"0e8a16","description":"Approved as work WeHunt intends to pursue"},
+  {"name":"status: planned","color":"1d76db","description":"Scheduled for a future release or milestone"},
+  {"name":"status: in-progress","color":"5319e7","description":"Actively being implemented"},
+  {"name":"status: testing","color":"bfdadc","description":"Implementation is being validated"},
+  {"name":"status: shipped","color":"0052cc","description":"Released to users"},
+  {"name":"status: declined","color":"cfd3d7","description":"Not currently planned"},
+
+  {"name":"priority: critical","color":"b60205","description":"Urgent issue with severe user or business impact"},
+  {"name":"priority: high","color":"d93f0b","description":"Important work that should be addressed soon"},
+  {"name":"priority: normal","color":"fbca04","description":"Standard priority work"},
+  {"name":"priority: low","color":"0e8a16","description":"Useful but not time-sensitive"},
+
+  {"name":"platform: steam","color":"1b2838","description":"Related to Steam"},
+  {"name":"platform: xbox","color":"107c10","description":"Related to Xbox"},
+  {"name":"platform: playstation","color":"006fcd","description":"Related to PlayStation"},
+  {"name":"platform: website","color":"0969da","description":"Related to the WeHunt.gg website"},
+  {"name":"platform: all","color":"6f42c1","description":"Applies across all supported platforms"},
+
+  {"name":"area: achievements","color":"c5def5","description":"Achievement data, tracking, or presentation"},
+  {"name":"area: sync","color":"f9d0c4","description":"Platform or game-data synchronization"},
+  {"name":"area: accounts","color":"e99695","description":"Authentication, account linking, or account settings"},
+  {"name":"area: profiles","color":"fef2c0","description":"User profiles and public profile pages"},
+  {"name":"area: search","color":"bfdadc","description":"Search and discovery functionality"},
+  {"name":"area: ui","color":"d4c5f9","description":"User interface, usability, or visual design"},
+  {"name":"area: notifications","color":"b60205","description":"Email, in-app, or other notifications"},
+  {"name":"area: admin","color":"7057ff","description":"Administration and moderation tooling"},
+
+  {"name":"duplicate","color":"cfd3d7","description":"This submission already exists elsewhere"},
+  {"name":"needs-information","color":"d876e3","description":"More information is needed from the reporter"},
+  {"name":"cannot-reproduce","color":"e4e669","description":"The reported behavior could not be reproduced"},
+  {"name":"security","color":"b60205","description":"Security-sensitive report requiring restricted handling"}
+]
