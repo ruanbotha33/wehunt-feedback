@@ -6,6 +6,7 @@ Use this repository to report bugs, suggest improvements, vote on feature ideas,
 
 ## Get involved
 
+- **View the roadmap:** [WeHunt Product](https://github.com/users/ruanbotha33/projects/2)
 - **Report a bug:** [Open a structured bug report](https://github.com/ruanbotha33/wehunt-feedback/issues/new?template=bug_report.yml)
 - **Request a feature:** [Share an idea](https://github.com/ruanbotha33/wehunt-feedback/discussions/categories/ideas)
 - **Vote on ideas:** Browse the [Ideas discussions](https://github.com/ruanbotha33/wehunt-feedback/discussions/categories/ideas) and upvote the requests you care about
@@ -17,7 +18,7 @@ Use this repository to report bugs, suggest improvements, vote on feature ideas,
 2. Upvote an existing discussion when it matches your idea.
 3. Add useful examples or use cases in the comments.
 4. Maintainers review requests based on user value, product fit, effort, platform limitations, and community interest.
-5. Accepted requests are converted into trackable work and added to the roadmap.
+5. Accepted requests are converted into trackable work and added to the [public roadmap](https://github.com/users/ruanbotha33/projects/2).
 
 Votes help show demand, but they do not guarantee that a feature will be built or determine its delivery order by themselves.
 
@@ -26,6 +27,10 @@ Votes help show demand, but they do not guarantee that a feature will be built o
 Please use the bug report form and include clear reproduction steps, the affected platform, expected behavior, and screenshots or recordings when possible.
 
 Do **not** include passwords, authentication tokens, private account information, or security vulnerability details in a public issue.
+
+## Public roadmap
+
+The [WeHunt Product Project](https://github.com/users/ruanbotha33/projects/2) tracks reviewed bugs, accepted feature requests, active work, testing, and shipped improvements. Priorities and dates may change as technical constraints, platform limitations, and product needs evolve.
 
 ## Statuses
 
