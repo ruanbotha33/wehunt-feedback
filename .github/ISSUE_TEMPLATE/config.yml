@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Feature requests and voting
+    url: https://github.com/ruanbotha33/wehunt-feedback/discussions/categories/ideas
+    about: Suggest a feature, discuss it with the community, or upvote an existing idea.
+  - name: Questions and general discussion
+    url: https://github.com/ruanbotha33/wehunt-feedback/discussions
+    about: Ask a question or start a conversation that is not a bug report.
