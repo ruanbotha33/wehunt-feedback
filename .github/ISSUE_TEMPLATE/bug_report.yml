@@ -1,0 +1,117 @@
+name: Bug report
+description: Report a reproducible problem with WeHunt.gg
+title: "[Bug]: "
+labels:
+  - "type: bug"
+  - "status: needs-triage"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve WeHunt.gg. Please search existing issues before submitting a new report.
+
+        **Security notice:** Do not include passwords, authentication tokens, private account data, or security vulnerability details in this public form.
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Affected platform
+      description: Where did the problem occur?
+      options:
+        - WeHunt.gg website
+        - Steam integration
+        - Xbox integration
+        - PlayStation integration
+        - Multiple platforms
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: game
+    attributes:
+      label: Game or achievement
+      description: Add the game or achievement name when relevant.
+      placeholder: Example: Elden Ring — Elden Lord
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the problem clearly and concisely.
+      placeholder: Tell us what you observed.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Give the exact steps that reliably trigger the problem.
+      value: |
+        1. Go to ...
+        2. Click on ...
+        3. Scroll to ...
+        4. See error ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: What should have happened instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      placeholder: What happened instead?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does this happen?
+      options:
+        - Every time
+        - Often
+        - Sometimes
+        - Happened once
+        - Unsure
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Browser, device, or app environment
+      description: Include the browser and operating system when relevant.
+      placeholder: Example: Chrome 127 on Windows 11
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots, recordings, or logs
+      description: Drag files here or paste relevant non-sensitive logs. Remove personal information first.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add anything else that may help reproduce or understand the issue.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and did not find a duplicate.
+          required: true
+        - label: I removed passwords, tokens, and private account information.
+          required: true
+        - label: I have included enough detail to reproduce the problem.
+          required: true
