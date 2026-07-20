@@ -1,0 +1,74 @@
+title: "[Feature]: "
+labels:
+  - "type: feature"
+  - "status: needs-review"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping shape WeHunt.gg. Search existing Ideas first and upvote a matching request instead of creating a duplicate.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Explain the user need or frustration rather than only naming a feature.
+      placeholder: As a user, I struggle to ... because ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like WeHunt.gg to do?
+      description: Describe the experience or behavior you are requesting.
+      placeholder: WeHunt.gg should ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platforms
+    attributes:
+      label: Relevant platforms
+      description: Select every platform affected by this idea.
+      multiple: true
+      options:
+        - WeHunt.gg website
+        - Steam
+        - Xbox
+        - PlayStation
+        - All platforms
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: benefit
+    attributes:
+      label: Who would benefit?
+      description: Explain who needs this and how it would improve their experience.
+      placeholder: This would help users who ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples or references
+      description: Add mockups, screenshots, links, or examples from other products when useful.
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or workarounds
+      description: Describe anything you currently do instead.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before posting
+      options:
+        - label: I searched existing Ideas and did not find a matching request.
+          required: true
+        - label: I described the problem and user benefit, not only a solution name.
+          required: true
